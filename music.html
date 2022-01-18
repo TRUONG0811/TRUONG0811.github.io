@@ -13,92 +13,7 @@
 </head>
 
 <body>
-    <!-- <div class="player">
-        <div class="dashboard">
-            <header>
-                <h4 class="one">Now playing</h4>
-                <h2 class="two">String 57th & 9th</h2>
-            </header>
-            <div class="cd">
-                <div class="cd-all" style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScpVIcWH8roYgCiT6q7mCmhuEhRCWgg7Ithg&usqp=CAU')">
-                </div>
-            </div>
-            <div class="control">
-                <div class="control-back">
-                    <i class="ti-back-right"></i>
-                </div>
-                <div class="control-leff">
-                    <i class="ti-control-backward"></i>
-                </div>
-                <div class="control-center">
-                    <i class="ti-control-play controll-play"></i>
-                    <i class="ti-control-pause control-pause"></i>
-                </div>
-                <div class="control-right">
-                    <i class="ti-control-forward"></i>
-                </div>
-                <div class="control-befort">
-                    <i class="ti-back-left"></i>
-                </div>
-            </div>
-            <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
-            <audio id="audio" src=""></audio>
-        </div>
-        <div class="play-list">
-            <div class="song">
-                <div class="song-header" style="background-image: url('https://data.chiasenhac.com/data/cover/143/142973.jpg')">
-                </div>
-                <div class="song-all">
-                    <div class="song-name">
-                        <h2>Rước anh để má em lo</h2>
-                        <p>Thảo Wendy</p>
-                    </div>
-                </div>
-                <div class="song-option">
-                    <i class="ti-more song-icon"></i>
-                </div>
-            </div>
-            <div class="song">
-                <div class="song-header" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScpVIcWH8roYgCiT6q7mCmhuEhRCWgg7Ithg&usqp=CAU')">
-                </div>
-                <div class="song-all">
-                    <div class="song-name">
-                        <h2>Em say rồi </h2>
-                        <p>Thương Võ</p>
-                    </div>
-                </div>
-                <div class="song-option">
-                    <i class="ti-more song-icon"></i>
-                </div>
-            </div>
-            <div class="song">
-                <div class="song-header" style="background-image: url('https://data.chiasenhac.com/data/cover/153/152383.jpg')">
-                </div>
-                <div class="song-all">
-                    <div class="song-name">
-                        <h2>Lặng thầm một tình yêu</h2>
-                        <p>Thanh</p>
-                    </div>
-                </div>
-                <div class="song-option">
-                    <i class="ti-more song-icon"></i>
-                </div>
-            </div>
-            <div class="song">
-                <div class="song-header" style="background-image: url('https://data.chiasenhac.com/data/cover/128/127913.jpg')">
-                </div>
-                <div class="song-all">
-                    <div class="song-name">
-                        <h2>Lỡ hẹn với dòng lam</h2>
-                        <p>Thái Học</p>
-                    </div>
-                </div>
-                <div class="song-option">
-                    <i class="ti-more song-icon"></i>
-                </div>
-            </div>
-        </div>
-    </div> -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music player</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
@@ -153,68 +68,6 @@
     <!-- Design from: https://static.collectui.com/shots/3671744/musicloud-revolutionary-app-for-music-streaming-large -->
 
     <script>
-        // const $ = document.querySelector.bind(document)
-        // const $$ = document.querySelectorAll.bind(document)
-
-
-        // const app = {
-        //     songs: [{
-        //         name: 'Vũ',
-        //         singer: 'Bước qua nhau',
-        //         path: './html/music/Buoc Qua Nhau - Vu.mp3',
-        //         image: './html/image/anh1.jpg'
-        //     }, {
-        //         name: 'Dunghoangpham',
-        //         singer: 'Đế vương',
-        //         path: './html/music/De Vuong - Dunghoangpham_ ACV.mp3',
-        //         image: './html/image/anh2.jpg'
-        //     }],
-        //     render: function() {
-        //         const htmls = this.songs.map(song => {
-        //             return ` <div class="song">
-        //                    <div class="song-header" style="background-image: url('${song.image}')">
-        //                    </div>
-        //                      <div class="song-name">
-        //                        <h2>${song.name}</h2>
-        //                        <p>${song.singer}</p>
-        //                </div>
-        //              <div class="song-option">
-        //                 <i class="ti-more song-icon"></i>
-        //              </div>
-        //           </div>`
-
-        //         })
-        //         $('.play-list').innerHTML = htmls.join(' ')
-        //     },
-        //     handEvents: function() {
-        //         const cd = $('.cd')
-        //         const cdWidth = cd.offsetWidth
-        //         document.onscroll = function() {
-        //             console.log(window.scrollY)
-        //             const newCdwigth = cdWidth - scrollY
-        //             cd.style.width = newCdwigth > 0 ? newCdwigth + 'px' : 0
-        //             cd.style.opacity = newCdwigth / cdWidth
-        //         }
-        //     },
-        //     loadCurrenSong: function() {
-        //         const heading = $('header h2')
-        //         const cdAll = $('.cd-all')
-        //         const audioAll = $('#audio')
-        //         heading.textContent = this.loadCurrenSong.name
-        //         cdAll.style.background = `url('${this.loadCurrenSong.image}')`
-        //         audio.src = this.loadCurrenSong.path
-        //         console.log(heading, cdAll, audioAll)
-        //     },
-        //     start: function() {
-        //         this.handEvents()
-        //         this.render()
-        //         this.loadCurrenSong()
-        //     }
-        // }
-        // app.start();
-        // Một số bài hát có thể bị lỗi do liên kết bị hỏng. Vui lòng thay thế liên kết khác để có thể phát
-        // Some songs may be faulty due to broken links. Please replace another link so that it can be played
-
         const $ = document.querySelector.bind(document);
         const $$ = document.querySelectorAll.bind(document);
 
@@ -250,12 +103,12 @@
                 name: "Sài Gòn đau lòng quá",
                 singer: "Hứa Kim Tuyền - Hoàng Duyên",
                 path: "http://vtf9.nixcdn.com/27a98ecec52e3654b3b7fed20b9829ce/61e66d86/NhacCuaTui1013/SaiGonDauLongQua-HuaKimTuyenHoangDuyen-6992977.mp3",
-                image: "https://1.bp.blogspot.com/-kX21dGUuTdM/X85ij1SBeEI/AAAAAAAAKK4/feboCtDKkls19cZw3glZWRdJ6J8alCm-gCNcBGAsYHQ/s16000/Tu%2BAana%2BPhir%2BSe%2BRap%2BSong%2BLyrics%2BBy%2BRaftaar.jpg"
+                image: "https://img.thuthuatphanmem.vn/uploads/2018/09/27/hinh-anh-dep-ve-sai-gon-xe-chieu_105139633.jpg"
             }, {
                 name: "Lạc nhau có phải muôn đời",
                 singer: "ERIK",
                 path: "http://vts95.nixcdn.com/bcf68a75e7216467e3bfcd339f615f77/61e66d86/NhacCuaTui935/LacNhauCoPhaiMuonDoiMovieVersionChoEmDenNgayMaiOST-ERIKST319-4724804.mp3",
-                image: "https://i.ytimg.com/vi/QvswgfLDuPg/maxresdefault.jpg"
+                image: "https://wikicachlam.com/wp-content/uploads/2017/06/loi-bai-hat-lac-nhau-co-phai-muon-doi.jpg"
             }, {
                 name: "Yêu như ngày yêu cuối",
                 singer: "Quang Dũng",
