@@ -21,7 +21,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
     <div class="player">
-        <!-- Dashboard -->
         <div class="dashboard">
 
             <header>
@@ -65,7 +64,6 @@
         </div>
     </div>
 
-    <!-- Design from: https://static.collectui.com/shots/3671744/musicloud-revolutionary-app-for-music-streaming-large -->
 
     <script>
         const $ = document.querySelector.bind(document);
@@ -92,8 +90,6 @@
             isRandom: false,
             isRepeat: false,
             config: {},
-            // (1/2) Uncomment the line below to use localStorage
-            // config: JSON.parse(localStorage.getItem(PlAYER_STORAGE_KEY)) || {},
             songs: [{
                 name: "Thức Giấc",
                 singer: "Da LAB",
@@ -132,8 +128,7 @@
             }],
             setConfig: function(key, value) {
                 this.config[key] = value;
-                // (2/2) Uncomment the line below to use localStorage
-                // localStorage.setItem(PlAYER_STORAGE_KEY, JSON.stringify(this.config));
+
             },
             render: function() {
                 const htmls = this.songs.map((song, index) => {
