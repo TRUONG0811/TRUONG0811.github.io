@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "visual"
+		},
+		{
+			"path": "react-webpack"
+		},
+		{
+			"path": "Reactjs\\tiktok"
+		},
+		{
+			"path": "..\\..\\..\\..\\Demo"
+		},
+		{
+			"path": "..\\..\\..\\..\\Flutter tooll"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"merge-conflict.diffViewPosition": "Below",
+		"workbench.editor.openPositioning": "left",
+		"workbench.editor.openSideBySideDirection": "down",
+		"liveServer.settings.multiRootWorkspaceName": "visual"
+	}
+}
